@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Nicholas Lobo Full Stack</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="" />
+    <link rel="icon" sizes="192x192" href="images/small_logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Nav Bar -->
+        <nav class="d-flex flex-row navbar navbar-expand-md navbar-dark fixed-top header-transparent" id="cabecalho">
+            <!--picture class="logo">
+                <source media="(min-width: 576px)" srcset="images/small_logo.png">
+                <img src="images/small_logo.png" alt="Nicholas Portfolio Logo">
+            </picture>-->
+            <a class="navbar-brand" href="#">Nicholas Lobo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#realtime">Productivity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#aboutme">About Me </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Page -->
+    <main>
+
+        <section class="main-section">
+            <!-- Canvas Animation -->
+            <canvas id="canvas">
+                <p>For 100% interactivity.</p>
+                <p>Last version of Google Chrome Recommended</p>
+            </canvas>
+            <!-- Main Cta -->
+            <div class="main-cta">
+
+
+                <div class="container-fluid" id="home">
+
+                    <div class="center-me">
+                        <h1 class="display-3">Full Stack</h1>
+                        <h2 class="display-4">Web Developer</h2>
+                        <article>
+                            <h3 class="display-5">Contact me:</h3>
+                            <p>
+                                <a class="btn btn-outline-info btn-lg" href="https://github.com/nicholasinatel/"
+                                    target="_blank" role="button"><i class="fab fa-github"></i> Github</a>
+                                <a class="btn btn-outline-info btn-lg" href="https://bitbucket.org/Nicholas-Fernandes/"
+                                    target="_blank" role="button"><i class="fab fa-git"></i> Bitbucket</a>
+                                <a class="btn btn-outline-info btn-lg"
+                                    href="https://www.linkedin.com/in/nicholas-iot-dev/" target="_blank"
+                                    role="button">Linked<i class="fab fa-linkedin"></i></a>
+                                <a class="btn btn-outline-info btn-lg"
+                                    href="https://medium.com/@nicholasfernandespaolillo" target="_blank"
+                                    role="button"><i class="fab fa-medium"></i> Medium</a>
+                                <a class="btn btn-outline-info btn-lg"
+                                    href="https://codepen.io/nicholas-fernandes-de-almeida/#" target="_blank"
+                                    role="button"><i class="fab fa-codepen"></i> Codepen</a>
+                            </p>
+                        </article>
+                        <article>
+                            <h3 class="display-5">
+                                Resume
+                            </h3>
+                            <p>
+                                <a class="btn btn-outline-primary btn-lg"
+                                    href="https://drive.google.com/file/d/1oVz0lmRh5HT06ZW8PY4e6ioZkTYsZE-O/view?usp=sharing"
+                                    target="_blank" role="button"><i class="far fa-address-card"></i> English</a>
+                                <a class="btn btn-outline-primary btn-lg"
+                                    href="https://drive.google.com/file/d/1RcAFHcYQkTPhKXaAKUAjuu5zbysLh_Vo/view?usp=sharing"
+                                    target="_blank" role="button"><i class="far fa-address-card"></i> Português</a>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="track-activity">
+            <div class="container-fluid" id="realtime">
+                <h2 class="status-title">Real Time Programming Activity</h2>
+                <hr>
+                <div id="first-graphic" class="ct-chart ct-golden-section"></div>
+            </div>
+            <div class="container-fluid" id="yeartime">
+                <div class="row">
+                    <div class="col-xl">
+                        <h2 class="status-title">Last Year Work</h2>
+                        <hr>
+                        <figure><embed
+                                src="https://wakatime.com/share/@nicholaslobobr/ce55296d-4ea7-458d-9890-e8dca7a7ab6a.svg"></embed>
+                        </figure>
+                    </div>
+                    <div class="col-xl">
+                        <h2 class="status-title">Skills</h2>
+                        <hr>
+                        <div id="second-graphic" class="ct-chart-2 ct-golden-section">
+
+                        </div>
+                        <p class="legend">5 = Strong Experience</i>
+                            <p class="legend">0 = Weak Experience</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-me-section" id="aboutme">
+            <div class="container-fluid">
+                <h2 class="container-title">About Me</h2>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="center-figure">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/big_epic_profile1x.png">
+                                <source media="(max-width: 768px)" srcset="images/small_epic_profile1x.png">
+                                <img src="images/small_epic_profile1x.png" alt="Nicholas Portfolio Profile Picture">
+                            </picture>
+                        </div>
+                        <div class="about-me-text">
+                            <article>
+                                <h5>Full Stack Web Developer</h5>
+                                <p>Engineering professional graduated from Instituto Nacional
+                                    de Telecomunicações - Inatel.
+                                    </br>Skilled in Front-End and Back-end technolgies, with a diverse portfolio as
+                                    proof.
+                                    </br>Strong in JavaScript(jQuery), Python(Object-Oriented),
+                                    HTML5/CSS3(Bootstrap) with
+                                    excelent front-end capabilities
+                                    </br>Previously 2 years experienced Embedded System Development Engineer with a
+                                    demonstrated
+                                    history of working in the information technology and Internet of Things
+                                    industry.
+                                    </br>Worked with Python, C/C++, Contiki
+                                    and embedded systems. </p>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-md-6 about-me-list">
+                        <h2 class="status-title">Current Status</h2>
+                        <hr>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Company</th>
+                                        <th scope="col">Project</th>
+                                        <th scope="col">Detail</th>
+                                        <th scope="col">Finish</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">December/2018</th>
+                                        <td>Fiscoserv</td>
+                                        <td>Financial Dashboard</td>
+                                        <td>Develop Dashboard, link to webservice in python</td>
+                                        <td>3 months</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h2 class="status-title">Work History</h2>
+                        <hr>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Company</th>
+                                        <th scope="col">Project</th>
+                                        <th scope="col">Detail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">October/2018</th>
+                                        <td>Udacity Website Movie Trailer</td>
+                                        <td>Front-End + Back-End</td>
+                                        <td>Website for showing movie trailers</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">September/2018</th>
+                                        <td>Agencia Vivaz</td>
+                                        <td>Promotional Website + SEO</td>
+                                        <td>Beautiful Web Design for digital market agency</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">August/2018</th>
+                                        <td>Caelum E-commerce</td>
+                                        <td>E-commerce Website</td>
+                                        <td>Back and Front-End for Caelum with PHP</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">May/2018</th>
+                                        <td>CryptoCurrency Payment System</td>
+                                        <td>Back-End</td>
+                                        <td>Coinbase Api for accepting cryptocurrency payments with Node.js</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <div class="container-fluid" id="projects">
+            <h2 class="project-title">Projects</h2>
+            <hr>
+            <div class="row">
+
+                <!-- Project One -->
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Holismo Dynamic Real Time Organization Tool</h2>
+                        <p>My Third job as web developer, working as back-end developer, giving support to the front-end
+                            developer,
+                            responsible for the deploy with Heroku and AWS and architecht of the solution.
+                        </p>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>JavaScript</li>
+                            <li>Hapi</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Swagger</li>
+                            <li>AWS</li>
+                            <li>BCrypt</li>
+                            <li>Boom</li>
+                            <li>Joi</li>
+                            <li>JWT</li>
+                            <li>Vision</li>
+                            <li>Mocha</li>
+                            <li>Istanbul</li>
+                            <li>PM2</li>
+                            <li>Vue.js</li>
+                            <li>Git Crypt</li>
+                        </ul>
+                        <p><a class="btn btn-secondary btn-info" href="http://holismo.org" target="_blank"
+                                role="button">www</a>
+                            <a class="btn btn-secondary" href="https://github.com/nicholasinatel/holism-backend"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="border border-light rounded col-md-4">
+                        <article class="project-text">
+                            <h2>Neighborhood Map - Udacity</h2>
+                            <p>Describe STAR here, Put Online inside nicklobo
+                            </p>
+                            <ul>
+                                <li>MVM Design Pattern</li>
+                                <li>Knockout.js</li>
+                                <li>Foursquare API</li>
+                                <li>Google Maps API</li>
+                                <li>Bootstrap 4</li>
+                                <li>jQuery</li>
+                            </ul>
+                            <p><a class="btn btn-secondary"
+                                    href="https://github.com/nicholasinatel/Neighborhood-Map" target="_blank"
+                                    role="button"><i class="fab fa-github"></i></a></p>
+                        </article>
+                    </div>
+
+                <!-- Project 3 -->
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Cat Clicker With Knockout - Udacity</h2>
+                        <p>Describe STAR here, Put Online inside nicklobo
+                        </p>
+                        <ul>
+                            <li>MVM Design Pattern</li>
+                            <li>Knockout.js</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/cat-clicker-knockout" target="_blank"
+                                role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+                <!-- Project 4 -->
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Resume Project- Udacity</h2>
+                        <p>Describe STAR here, Put Resume Online inside nicklobo
+                        </p>
+                        <ul>
+                            <li>MVM Design Pattern</li>
+                            <li>Vanilla JavaScript</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/frontend-nanodegree-resume" target="_blank"
+                                role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+                <!-- Project 5 -->
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Cat Clicker Vanilla Javascript- Udacity</h2>
+                        <p>Describe STAR here, Put CatClicker Online inside nicklobo
+                        </p>
+                        <ul>
+                            <li>MVM Design Pattern</li>
+                            <li>Vanilla JavaScript</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/cat-clicker-vanilla-js-udacity" target="_blank"
+                                role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+                <!-- Project 6 -->
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Financial Wallet - Udacity Catalog Project</h2>
+                        <p>Application that provides a list of items within a variety of categories,
+                            third-party user registration and authentication system.
+                            Registered users have the ability to post, edit, and delete their own items.
+                            Put Financial Wallet Online in Heroku
+                        </p>
+                        <ul>
+                            <li>SQLite</li>
+                            <li>SQLAlchemy</li>
+                            <li>Flask</li>
+                            <li>Python</li>
+                            <li>VirtualBox</li>
+                            <li>Vagrant</li>
+                            <li>New Google Sign-In API</li>
+                            <li>Facebook Authentication Api</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/fullstack-nanodegree-vm/tree/master/vagrant/catalog"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Restaurant Menu App - Udacity</h2>
+                        <p>The app allows the user to view the menu for all the registered restaurants.
+                            Users are also able to create, read, update and delete restaurants and menus items.
+                            Put Online Inside Heroku.
+                        </p>
+                        <ul>
+                            <li>SQLite</li>
+                            <li>SQLAlchemy</li>
+                            <li>Flask</li>
+                            <li>Python</li>
+                            <li>VirtualBox</li>
+                            <li>Vagrant</li>
+                            <li>jsonify</li>
+                            <li>request</li>
+                            <li>flash</li>
+                            <li>url_for</li>
+                            <li>redirect</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/fullstack-nanodegree-vm/tree/master/vagrant/lessons/02-flask/09-final-project"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2> Bookmark Server - Udacity</h2>
+                        <p>Learning to build Python HTTP servers and deploy to Heroku
+                            Make available Github
+                        </p>
+                        <ul>
+                            <li>Python HTTP Server</li>
+                            <li>Heroku</li>
+                        </ul>
+                        <p><a class="btn btn-secondary btn-info" href="https://bookmark-server-nicholas.herokuapp.com"
+                                target="_blank" role="button">www</a>
+                        </p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2> Node Web App Multi DB - NodeBR</h2>
+                        <p>Build from scratch backend application with PostgreSQL and MongoDB, making the web API
+                            available online throw Heroku
+                            utilizing Swagger plugin for documentation and PM2 for server management.
+                            Push to github at other remote
+                        </p>
+                        <ul>
+                            <li>Node</li>
+                            <li>Hapi</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Postgres</li>
+                            <li>Heroku</li>
+                            <li>Swagger</li>
+                            <li>PM2</li>
+                            <li>Mocha</li>
+                            <li>Istanbul</li>
+                            <li>Strategy Design Pattern</li>
+                            <li>bcrypt</li>
+                            <li>Boom</li>
+                            <li>Joi</li>
+                            <li>JSON Web Token</li>
+                        </ul>
+                        <p><a class="btn btn-secondary btn-info"
+                                href="https://cursonodebr-nicholas.herokuapp.com/documentation" target="_blank"
+                                role="button">www</a>
+                            <a class="btn btn-secondary" href="https://github.com/nicholasinatel/VivazWebsite"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Log Analysis Server - Udacity</h2>
+                        <p>Internal reporting tool.
+                            The tool uses information from the database to discover what kind of articles the site's
+                            readers like.
+                            The database contains newspaper articles, as well as the web server log for the site.
+                            The log has a database row for each time a reader loaded a web page.
+                            The code connect's to the PostgreSQL database, use's SQL queries to analyze the log data,
+                            and print's out the analysis.
+                        </p>
+                        <ul>
+                            <li>Python FLASK</li>
+                            <li>PostgreSQL</li>
+                            <li>SQLAlchemy</li>
+                            <li>Vagrant</li>
+                            <li>psycopg2</li>
+                        </ul>
+                        <p><a class="btn btn-secondary btn-info" href="http://200.98.145.91/dashboard/" target="_blank"
+                                role="button">www</a>
+                            <a class="btn btn-secondary" href="https://github.com/nicholasinatel/VivazWebsite"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Fiscoserv Financial Dashboard</h2>
+                        <p>My second job as web developer, working with fron-end technologies to create a financial
+                            dashboard with login, security authentication, server data requests and graphic plotting
+                        </p>
+                        <ul>
+                            <li>HTML5/CSS3</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Bootstrap</li>
+                            <li>AJAX</li>
+                            <li>Chartist.js</li>
+                            <li>Dynamic Tables</li>
+                        </ul>
+                        <p><a class="btn btn-secondary btn-info" href="http://200.98.145.91/dashboard/" target="_blank"
+                                role="button">www</a>
+                            <a class="btn btn-secondary" href="https://github.com/nicholasinatel/VivazWebsite"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Portfolio Website</h2>
+                        <p>Udacity project
+                        </p>
+                        <ul>
+                            <li>HTML5/CSS3</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Bootstrap</li>
+                            <li>AJAX</li>
+                            <li>Chartist.js</li>
+                            <li>Wakatime Graphics</li>
+                            <li>Canvas</li>
+                        </ul>
+                        <p>
+                            <a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/Udacity/tree/master/Projects/06-Porfolio-Website"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Website Agência Vivaz</h2>
+                        <p>My first developed website, built from a starting Template, made a lot of modifications,
+                            having implemented my own Carrousel and Canvas.
+                            Optimized for quick and light access, utilizing the following technologies.
+                        </p>
+                        <ul>
+                            <li>HTML5/CSS3</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Bootstrap</li>
+                            <li>Sass</li>
+                        </ul>
+                        <p><a class="btn btn-secondary btn-info" href="https://www.vivazagencia.com.br" target="_blank"
+                                role="button">www</a>
+                            <a class="btn btn-secondary" href="https://github.com/nicholasinatel/VivazWebsite"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Website Movie Trailers Udacity</h2>
+                        <p>Server-side code to store a list of my favorite movies,
+                            including box art imagery and a movie trailer URL. With python code
+                            to generate a static web page allowing visitors to browse throw
+                            my movies and watch trailers.</p>
+                        <ul>
+                            <li>HTML5/CSS3</li>
+                            <li>OOP - Object Oriented Python</li>
+                            <li>Fresh Tomatoes</li>
+                        </ul>
+                        <p><a class="btn btn-secondary btn-info" href="websites/freshtomatoes/fresh_tomatoes.html"
+                                role="button">www</a>
+                            <a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/Udacity/tree/master/Projects/01-Movie-Website"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Break Time App - Python</h2>
+                        <p>Developed code for interrupt overwork, that opens the web browser after selected amount of
+                            time
+                        </p>
+                        <ul>
+                            <li>Python</li>
+                            <li>webbrowser Library</li>
+                            <li>time Library</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/Udacity/tree/master/Projects/02-Break-Time-App"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Message Decrypter - Python</h2>
+                        <p>Developed code for renaming image file names, removing numbers so the words can be reordered
+                            alphabetically.
+                        </p>
+                        <ul>
+                            <li>Python</li>
+                            <li>File workflow</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/Udacity/tree/master/Projects/03-Message-Decrypter"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Profanity Checker - Python</h2>
+                        <p>Developed code that checks for curse words in a text file.
+                        </p>
+                        <ul>
+                            <li>Python</li>
+                            <li>urllib Library</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/Udacity/tree/master/Projects/04-Profanity-Checker"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Draw Square - Python</h2>
+                        <p>Developed code working with the turtle python library, made for introductory self-learning
+                            at
+                            object-oriented python.
+                        </p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Turtle Library</li>
+                        </ul>
+                        <p><a class="btn btn-secondary"
+                                href="https://github.com/nicholasinatel/Udacity/tree/master/Projects/05-Draw-Square"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Caelum E-Commerce</h2>
+                        <p>Developed website for learning front and back end basic technologies for Caelum web course
+                        </p>
+                        <ul>
+                            <li>HTML5/CSS3</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>PHP</li>
+                        </ul>
+                        <p><a class="btn btn-secondary" href="https://github.com/nicholasinatel/E-Commerce-Caelum"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>NODE.js</h2>
+                        <p>Developing code for learning NodeJS, covering the basic and advanced functionalities of the
+                            framework.
+                        </p>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                        </ul>
+                        <p><a class="btn btn-secondary" href="https://github.com/nicholasinatel/NodeJS" target="_blank"
+                                role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+
+                <div class="border border-light rounded col-md-4">
+                    <article class="project-text">
+                        <h2>Cryptocurrency Payment System</h2>
+                        <p>Developed code for learning how to make a payment system that accepts bitcoin, using NodeJS,
+                            Express and Mongoose.
+                        </p>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>MongoDB</li>
+                            <li>NodeJS</li>
+                        </ul>
+                        <p><a class="btn btn-secondary" href="https://github.com/nicholasinatel/PaymentMongoDB"
+                                target="_blank" role="button"><i class="fab fa-github"></i></a></p>
+                    </article>
+                </div>
+            </div>
+        </div> <!-- /container -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="jumbotron white-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h5>Contato: </h5>
+                    <ul>
+                        <li>contato@nicklobo.com.br</li>
+                        <li>+55 35 9 9708 1428</li>
+                    </ul>
+                </div>
+                <div class="col-xl-2">
+                    <p>&copy; Nicholas Lobo 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+    <script src="assets/js/scroll.js"></script>
+    <!-- Chartist -->
+    <script src="assets/chartist/dist/chartist.min.js"></script>
+    <!-- Main Script-->
+    <script src="assets/js/main.js"></script>
+    <!-- Picture Fill For Picture HTML element Browser Support-->
+    <script src="assets/js/picturefill.min.js"></script>
+    <!-- Canvas Script Taken from CodePen(https://codepen.io/giana/pen/qbWNYy) Example All Thanks to Giana(https://codepen.io/giana/#) -->
+    <!--<script src="assets/js/script_canvas1.js"></script>-->
+    <script src="assets/threeJS/three.js"></script>
+    <script src="assets/threeJS/WebGL.js"></script>
+    <script src="assets/threeJS/stats.min.js"></script>
+    <script src="assets/threeJS/bigbang.js"></script>
+</body>
+
+</html>

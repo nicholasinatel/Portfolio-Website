@@ -1,0 +1,528 @@
+:root {
+    --purple: #1a3671;
+    --blue: #006683;
+}
+
+/*
+*   Main Section Order
+*   1 - Header
+*     - NavBar
+*   2 - main
+*     - main-section
+*     - canvas
+*     - main-jumbotron
+*   3 - Project Section
+*   4 - Footer
+*/
+/*
+* ICON FONTS
+*/
+
+/*
+*
+* Semantic General Elements
+*
+*/
+h1,
+h3 {
+    padding: 10px;
+}
+
+.main-cta article {
+    text-align: center;
+}
+
+article {
+    font-size: 18px;
+    line-height: 1.5em;
+    padding-top: 25px;
+}
+
+/*
+* SINGLE ELEMENTS
+*/
+/*
+*
+* Text Color
+*
+*/
+.white-text {
+    color: white;
+}
+
+/*
+*
+* Buttons
+*
+*/
+.btn-lg {
+    margin: 5px;
+}
+
+.btn-outline-info {
+    color: white;
+    border-color: var(--purple);
+}
+
+.btn-outline-info:hover {
+    border-color: var(--purple);
+    background-color: var(--purple);
+}
+
+.btn-outline-primary {
+    color: white;
+    border-color: var(--blue);
+}
+
+.btn-outline-primary:hover {
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+
+.btn-info {
+    background-color: var(--purple);
+}
+
+.btn-info:hover {
+    background-color: var(--blue);
+}
+
+/*
+*
+* Images
+*
+*/
+
+.photo {
+    margin: 25px;
+    width: 50vw;
+}
+
+.graph {
+    max-height: 500px;
+}
+
+/*
+* CHARTIST
+*/
+.ct-golden-section {
+    max-height: 520px;
+}
+
+#first-graphic .ct-series-a .ct-area,
+#first-graphic .ct-series-a .ct-slice-donut-solid,
+#first-graphic .ct-series-a .ct-slice-pie {
+    fill: rgb(9, 35, 95);
+    fill-opacity: 0.5;
+}
+
+#first-graphic .ct-series-a .ct-bar,
+#first-graphic .ct-series-a .ct-line,
+#first-graphic .ct-series-a .ct-point,
+#first-graphic .ct-series-a .ct-slice-donut {
+    stroke: rgb(0, 85, 168);
+}
+
+.ct-label.ct-horizontal.ct-end {
+    border-right: dashed 0.5px rgba(109, 106, 106, 0.178);
+    font-size: 0.75rem;
+    line-height: 1;
+    text-align: center;
+    padding-left: 25%;
+
+}
+
+
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut {
+    stroke: rgb(0, 85, 168);
+}
+
+.ct-chart-2 .ct-bar {
+    stroke: rgba(0, 85, 168, 0.75);
+    stroke-width: 25px;
+}
+
+.legend {
+    text-align: center;
+}
+
+/*
+* ENTIRE SECTIONS
+*/
+/*
+*
+* Header
+*
+*/
+.header-transparent {
+    background-color: rgba(29, 55, 105, 0);
+}
+
+.header-solid {
+    background: linear-gradient(#3164c2 90%, #000000);
+}
+
+/*
+*
+* Main CTA
+*
+*/
+body {
+    width: 100%;
+    height: 100%;
+}
+main {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.main-section {
+    width: 100vw;
+    min-height: 100%;
+    height: 100vh;
+ 
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    z-index: auto;
+}
+
+
+#canvas {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    min-width: 100%;
+    max-height: inherit;
+    min-height: 100%;
+    background-color: black;
+    z-index: -1;
+    /*
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    min-width: 100%;
+    max-height: inherit;
+    min-height: 100%;
+    z-index: auto;*/
+    
+}
+
+.main-cta {
+    z-index: 10;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.jumbotron {
+
+    background: linear-gradient(#000000, #3164c2 4%);
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: inherit;
+    height: inherit;
+
+}
+
+#home {
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    height: inherit;
+    position: relative;
+}
+
+.container-fluid {
+    padding-top: 50px;
+
+}
+
+.main-cta .container-fluid,
+.main-cta,
+.main-section {
+
+    width: 100%;
+}
+
+.center-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#track-activity {
+    background-color: white;
+   z-index: auto;
+}
+
+#projects {
+    background-color: white;
+   
+}
+
+/*
+*
+* Main CTA
+*
+*/
+
+/*
+*
+* Project 
+*
+*/
+#projects {
+    z-index: 10;
+}
+
+.border {
+    padding: 10px;
+}
+
+.project-title,
+.status-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+/*
+*
+* About Me
+*
+*/
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    margin: 25px;
+}
+
+.about-me-section {
+    background-color: #e9ecef;
+    width: 100%;
+}
+
+.center-figure {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-list {
+    text-align: center;
+}
+
+.about-me-list div {
+    display: inline-block;
+    text-align: left;
+}
+
+.about-me-text {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.about-me-text h5 {
+    text-align: center;
+}
+
+.about-me-text p {
+    text-align: center;
+    margin: 0;
+}
+
+/*
+*
+* Mobile Last
+*
+*/
+@media screen and (max-width: 768px) {
+
+    /*
+*
+* Main CTA
+*
+*/
+    #home-title {
+        text-align: center;
+    }
+
+    #home-text p {
+        padding-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .display-3 {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+        padding: 0;
+    }
+
+    .display-4 {
+        font-size: 1.75rem;
+    }
+
+    .logo img {
+        max-width: 84px;
+    }
+
+    article h3 {
+        font-size: 1.5rem;
+    }
+
+    article .btn {
+        font-size: 1rem;
+    }
+
+    .center-me {
+        width: 100%;
+    }
+
+    .project-title,
+    .status-title {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #realtime,
+    #yeartime {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .ct-golden-section {
+        height: 450px;
+    }
+
+    .ct-label.ct-horizontal.ct-end {
+        border-right: none;
+        font-size: 0rem;
+        line-height: 0;
+        padding: 0;
+
+    }
+
+    .table th,
+    .table td {
+        line-height: 1;
+        padding-bottom: 10px;
+        padding-right: 2px;
+        padding-left: 5px;
+        padding-top: 10px;
+        width: 1px;
+    }
+
+    .table tbody tr th,
+    .table tbody tr td {
+        line-height: 1;
+        font-size: 15px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 992px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/* Error when resizing*/
+@media screen and (min-width: 1200px) and (max-width: 1340px) {
+    .display-3 {
+        font-size: 6rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 0;
+    }
+
+    .display-4 {
+        font-size: 4rem;
+        font-weight: 200;
+        text-align: center;
+        padding: 0;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+        font-weight: 200;
+        text-align: center;
+        padding: 0;
+    }
+
+    .photo {
+        max-width: 500px;
+    }
+
+    .logo {
+        max-width: 242px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1340px) {
+    .display-3 {
+        font-size: 6rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 0;
+    }
+
+    .display-4 {
+        font-size: 4rem;
+        font-weight: 200;
+        text-align: center;
+        padding: 0;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+        font-weight: 200;
+        text-align: center;
+        padding: 0;
+    }
+
+    .photo {
+        max-width: 500px;
+    }
+
+    .logo {
+        max-width: 242px;
+    }
+
+    /*
+*
+* About Me
+*
+*/
+    .about-me-text {
+        max-width: 50vw;
+    }
+}
